@@ -1,0 +1,13 @@
+/bin/
+/target/
+/.settings/
+.classpath
+.project
+Thumbs.db
+*.tmp
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr

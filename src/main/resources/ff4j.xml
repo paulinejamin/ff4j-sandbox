@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ff4j xmlns="http://www.ff4j.org/schema/ff4j"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.ff4j.org/schema/ff4j http://ff4j.org/schema/ff4j-1.4.0.xsd">
+
+    <features>
+        <feature uid="officehoursgreeting" enable="true"
+                 description="greet formally when office hours, relax otherwise">
+            <flipstrategy class="org.pjamin.ff4j.spring.sandbox.strategy.OfficeHoursStrategy">
+                <param name="startDate" value="8"/>
+                <param name="endDate" value="14"/>
+            </flipstrategy>
+        </feature>
+        <feature uid="organizationgreeting" enable="true" description="greets only for some organizations">
+            <flipstrategy class="org.pjamin.ff4j.spring.sandbox.strategy.OrganizationStrategy">
+                <param name="grantedOrganizations" value="GRA"/>
+            </flipstrategy>
+        </feature>
+        <feature uid="notused" enable="true" description="not used">
+        </feature>
+    </features>
+</ff4j>

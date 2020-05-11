@@ -1,0 +1,20 @@
+spring:
+  thymeleaf:
+    templateResolverOrder: 1
+  application:
+    name: ff4j-sandbox
+  jackson:
+    default-property-inclusion: non_null
+  datasource:
+    driver-class: org.h2.Driver #mandatory or else server wont start
+    
+health:
+  config:
+    enabled: false
+
+server:
+  port: 8086
+
+logging:
+  level:
+    root: debug
