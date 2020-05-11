@@ -5,8 +5,6 @@ spring:
     name: ff4j-sandbox
   jackson:
     default-property-inclusion: non_null
-  datasource:
-    driver-class: org.h2.Driver #mandatory or else server wont start
     
 health:
   config:
@@ -17,4 +15,4 @@ server:
 
 logging:
   level:
-    root: debug
+    root: error
